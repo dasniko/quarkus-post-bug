@@ -1,0 +1,20 @@
+{#include template.html}
+{#body}
+<h1>Registration</h1>
+<form method="post">
+    <div>
+        <label for="name">EventID</label>
+        <input type="text" name="eventId" id="eventId" placeholder="EventId" value="{form.eventId}"/>
+    </div>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" value="{form.name}"/>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" value="{form.email}"/>
+    </div>
+    <button type="submit" id="submit">Register</button>
+</form>
+{/body}
+{/include}
